@@ -119,6 +119,7 @@ button {
   color: #434455;
   text-decoration: none;
   padding: 24px 0;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .head-info__link:hover,
 .head-info__link:focus {
@@ -137,6 +138,7 @@ button {
   background-size: cover;
   max-width: 1440px;
   background-repeat: no-repeat;
+  background-position: center;
 }
 .main-page {
   font-weight: 700;
@@ -240,6 +242,7 @@ button {
   background: #fff;
   border-radius: 0 0 4px 4px;
   width: calc((100% - 72px) / 4);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .social-icon {
   display: flex;
@@ -265,6 +268,9 @@ button {
 .link-social:hover,
 .link-social:focus {
   background-color: #404bbf;
+}
+.social {
+  fill: #f4f4fd
 }
 .menu-portfolio {
   display: flex;
@@ -345,8 +351,6 @@ button {
 .page-footer {
   background: #2e2f42;
   padding: 100px 0;
-  display: flex;
-  justify-content: center;
 }
 
 .logo-footer {
@@ -360,9 +364,12 @@ button {
   text-decoration: none;
   margin-bottom: 16px;
 }
-.footer-conteiner {
+.container-box {
   display: flex;
   align-items: baseline;
+  
+}
+.footer-container {
   margin-right: 120px;
 }
 .footer-accent {
